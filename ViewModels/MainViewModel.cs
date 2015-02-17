@@ -80,7 +80,7 @@ namespace NewsBytes.ViewModels
             foreach (Result item in data.response.results)
             {
                 int i = 0;
-                this.Items.Add(new ItemViewModel() { ID = i.ToString(), LineOne = item.webTitle, LineTwo = item.webPublicationDate, LineThree = item.webUrl });
+                this.Items.Add(new ItemViewModel() { ID = i.ToString(), LineOne = item.webTitle, LineTwo = item.sectionName, LineThree = item.webUrl });
                 i++;
             }
             this.IsDataLoaded = true;
