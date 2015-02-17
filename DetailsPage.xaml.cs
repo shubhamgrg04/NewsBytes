@@ -29,6 +29,8 @@ namespace NewsBytes
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             string myurl = "";
+            string mytitle = "";
+
             textblock1.Text = "";
             if (DataContext == null)
             {
@@ -39,7 +41,10 @@ namespace NewsBytes
                 }
 
                 myurl = NavigationContext.QueryString["itemUrl"];
+                mytitle = NavigationContext.QueryString["itemTitle"];
+
             }
+            ArticleTitle.Text = mytitle;
             string baseurl2 = "http://api.aylien.com/api/v1/summarize";
             myurl = myurl.Replace("/", "%2F");
             myurl = myurl.Replace(":", "%3A");

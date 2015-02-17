@@ -43,7 +43,7 @@ namespace NewsBytes
                 return;
             
             // Navigate to the new page
-            NavigationService.Navigate(new Uri("/DetailsPage.xaml?selectedItem=" + (MainLongListSelector.SelectedItem as ItemViewModel).ID + "&itemUrl=" + (MainLongListSelector.SelectedItem as ItemViewModel).LineThree, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/DetailsPage.xaml?selectedItem=" + (MainLongListSelector.SelectedItem as ItemViewModel).ID + "&itemUrl=" + (MainLongListSelector.SelectedItem as ItemViewModel).LineThree + "&itemTitle=" + (MainLongListSelector.SelectedItem as ItemViewModel).LineOne, UriKind.Relative));
 
             // Reset selected item to null (no selection)
             MainLongListSelector.SelectedItem = null;
