@@ -36,7 +36,7 @@
                     <DataTemplate>
                       <StackPanel Margin="0,0,0,17">
                           <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="25"/>
-                          <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FF89C53F"/>
+                          <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FF0171B4"/>
                       </StackPanel>
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>
