@@ -64,7 +64,7 @@ namespace NewsBytes.ViewModels
         public async void LoadData()
         {
             HttpClient client = new HttpClient();
-            string baseurl = "http://content.guardianapis.com/search?q=debate&tag=politics/politics&from-date=2015-01-01&api-key=test";
+            string baseurl = "http://content.guardianapis.com/search?api-key=test&page-size=20&section=technology";
             string result = await client.GetStringAsync(baseurl);
             
             
